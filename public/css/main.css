@@ -1,0 +1,9 @@
+/* *** Base styles *** */
+body {
+  width: 100vw;
+  height: auto;
+}
+
+h1 {
+  color: red;
+}
