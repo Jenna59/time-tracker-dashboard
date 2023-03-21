@@ -21,3 +21,6 @@ README-template.md
 README.md
 style-guide.md
 design/*
+
+# Ignore Node modules
+node_modules/*
