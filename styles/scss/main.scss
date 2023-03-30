@@ -5,6 +5,11 @@ html {
   color:ghostwhite;
 }
 
+body {
+	display: grid;
+	grid-gap: 1em;
+	margin: 1em;
+}
 //set outline on card divs
 /* div {
   outline: 3px dotted orangered;
@@ -23,9 +28,19 @@ $accent-color-purple: hsl(264, 64%, 52%);
 $accent-color-yellow: hsl(43, 84%, 65%);
 
 /* Primary */
-$dark-blue:hsl(235, 46%, 20%);
+$base-blue: hsl(225,41.9%,83.1%);
+
+$dark-blue: hsl(235, 46%, 20%);
 
 // assign each color to a reusable class
+.dark-blue {
+  background-color: $dark-blue;
+}
+
+.accent-blue {
+  background-color: $accent-color-blue;
+} 
+
 .accent-orange {
   background-color: $accent-color-orange;
 }
@@ -50,9 +65,8 @@ $dark-blue:hsl(235, 46%, 20%);
   background-color: $accent-color-yellow;
 }
 
-.card-dark-blue {
-  background-color: $dark-blue;
-}
+/* ** Cards ** */
+$border-radius: 10%;
 
 /* *** Styling *** */
 
@@ -64,41 +78,97 @@ $dark-blue:hsl(235, 46%, 20%);
   background-repeat: no-repeat; /* 2 */
 }
 
+body {
+  background-color: $base-blue;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
 /* ** Card ** */
+.rounded-corners {
+  border-radius: $border-radius;
+}
+
+.report-header {
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  grid-template-rows: 1fr 1fr;
+  .avatar {
+    max-width: 100%;
+    grid-column: 1;
+    grid-row: 1 / 3;
+    border: 3px solid ghostwhite;
+    border-radius: 100%;
+  }
+  p, h1 {
+    grid-column: 2;
+  }
+  p {
+    grid-row: 1;
+  }
+  h1 {
+    grid-row: 2;
+  }
+}
 
 /* Activity Card */
-.activity-card {
-  border-radius: 5%;
+.card {
+  position: relative;
+  min-width: 100%;
+  // min-height: 100%;
   display: grid;
-  grid-template-rows: 1fr 1fr; // two rows of the same size
-  img {
-    grid-row: 1;
-    grid-column: 1;
-    z-index: 1;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: auto;
+  border-radius: $border-radius;
+}
+
+.icon {
+  grid-row: 1;
+  grid-column: 2 / 3;
+  position: relative;
+  z-index: 2;
+  justify-self: flex-end;
+}
+
+.card-base {
+  background-color: $dark-blue;
+  border-radius: $border-radius;
+  grid-row: 1 / 3;
+  grid-column: 1 / 3;
+  position: relative;
+  z-index: 3;
+  max-height: 80%;
+  align-self: flex-end;
+  //change order of layout in flex container
+  header { 
+    padding: 1em 1em 0;
+    h2 {
+      order: 1;
+    }
+    img {
+      order: 2;
+      align-self: center;
+    }
   }
 }
 
-.activity-card-content {
-  border-radius: inherit; //inherit the border-radius of the parent
-  width: 100%;
-  grid-row: 1 / 3;
-  grid-column: 1;
-  z-index: 2;
-  height: fit-content;
-  align-self: end;
-  // display: grid;
-  header, .card-body-txt { 
-    display: flex;
-    justify-content: space-between; 
-  }
-  //change order of layout in flex container
-  h2 {
-    order: 1;
-  }
-  img {
-    order: 2;
-  }
+header,
+.card-body-txt {
+  display: flex;
+  justify-content: space-between; 
+} 
+
+.card-body-txt {
+  padding: 0 1em 1em;
 }
+
+
+
+
 
   
 
