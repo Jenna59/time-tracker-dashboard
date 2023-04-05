@@ -3,133 +3,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="./styles/css/main.css" rel="stylesheet">
   <title>Frontend Mentor | Time tracking dashboard</title>
 
 <body>
-
-  <article class="rounded-corners dark-blue">
-    <header class="report-header rounded-corners accent-blue">
-      <img class="avatar" src="./images/image-jeremy.png" alt="User's avatar photo">
-      <p>Report for</p>
-      <h1>Jeremy Robson</h1>
-    </header>
-    <div class="card-body-txt">
-      <p>Daily</p>
-      <p>Weekly</p>
-      <p>Monthly</p>
-    </div>
-  </article>
-
-  <article class="card accent-orange">
-    <img class="icon" src="./images/icon-work.svg" alt="briefcase icon">
-    <div class="card-base">
-      <header>
-        <img src="./images/icon-ellipsis.svg" alt="ellipsis icon">
-        <h2>Work</h2>
+  <main class="container">
+    <article class="rounded-corners dark-blue report">
+      <header class="report-header rounded-corners accent-blue">
+        <img class="avatar" src="./images/image-jeremy.png" alt="User's avatar photo">
+        <p>Report for</p>
+        <h1>Jeremy Robson</h1>
       </header>
       <div class="card-body-txt">
-      <!--<p>5hrs</p>  daily -->
-      <!--<p>Previous - 7hrs</p>  daily -->
-        <p>32hrs</p> <!-- weekly -->
-        <p>Last Week - 36hrs</p> <!-- weekly -->
-      <!-- <p>103hrs</p> monthly -->
-      <!-- <p>Previous - 128hrs</p> monthly -->
+        <p>Daily</p>
+        <p>Weekly</p>
+        <p>Monthly</p>
       </div>
-    </div>
-  </article>
-
-  <article class="card accent-soft-blue">
-    <img class="icon" src="./images/icon-play.svg" alt="game controller icon">
-    <div class="card-base">
-      <header>
-        <img src="./images/icon-ellipsis.svg" alt="ellipsis icon">
-        <h2>Play</h2>
-      </header>
-      <div class="card-body-txt">
-        <!-- <p>1hr</p> daily -->
-        <!-- <p>Previous - 2hrs</p> daily -->
-        <p>10hrs</p> <!-- weekly -->
-        <p>Previous - 8hrs</p> <!-- weekly -->
-        <!-- <p>23hrs</p> monthly -->
-        <!-- <p>Previous - 29hrs</p> monthly -->
+    </article>
+  
+    <article class="card accent-orange work">
+      <img class="icon" src="./images/icon-work.svg" alt="briefcase icon">
+      <div class="card-base">
+        <header>
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis icon">
+          <h2>Work</h2>
+        </header>
+        <div class="card-body-txt">
+        <!--<p>5hrs</p>  daily -->
+        <!--<p>Previous - 7hrs</p>  daily -->
+          <p>32hrs</p> <!-- weekly -->
+          <p>Last Week - 36hrs</p> <!-- weekly -->
+        <!-- <p>103hrs</p> monthly -->
+        <!-- <p>Previous - 128hrs</p> monthly -->
+        </div>
       </div>
-    </div>
-  </article>
-
-  <article class="card accent-red">
-    <img class="icon" src="./images/icon-study.svg" alt="book icon">
-    <div class="card-base">
-      <header>
-        <img src="./images/icon-ellipsis.svg" alt="ellipsis icon">
-        <h2>Study</h2>
-      </header>
-      <div class="card-body-txt">
-        <!-- <p>0hrs</p> daily -->
-        <!-- <p>Previous - 1hr</p> daily -->
-        <p>4hrs</p> <!-- weekly -->
-        <p>Previous - 7hrs</p> <!-- weekly -->
-        <!-- <p>13hrs</p> monthly -->
-        <!-- <p>Previous - 19hrs</p> monthly -->
+    </article>
+  
+    <article class="card accent-soft-blue play">
+      <img class="icon" src="./images/icon-play.svg" alt="game controller icon">
+      <div class="card-base">
+        <header>
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis icon">
+          <h2>Play</h2>
+        </header>
+        <div class="card-body-txt">
+          <!-- <p>1hr</p> daily -->
+          <!-- <p>Previous - 2hrs</p> daily -->
+          <p>10hrs</p> <!-- weekly -->
+          <p>Previous - 8hrs</p> <!-- weekly -->
+          <!-- <p>23hrs</p> monthly -->
+          <!-- <p>Previous - 29hrs</p> monthly -->
+        </div>
       </div>
-    </div>
-  </article>
-
-  <article class="card accent-green">
-    <img class="icon" src="./images/icon-exercise.svg" alt="person running icon">
-    <div class="card-base">
-      <header>
-        <img src="./images/icon-ellipsis.svg" alt="ellipsis icon">
-        <h2>Exercise</h2>
-      </header>
-      <div class="card-body-txt">
-        <!-- <p>1hr</p> daily -->
-        <!-- <p>Previous - 1hr</p> daily -->
-        <p>4hrs</p> <!-- weekly -->
-        <p>Previous - 5hrs</p> <!-- weekly -->
-        <!-- <p>11hrs</p> monthly -->
-        <!-- <p>Previous - 18hrs</p> monthly -->
+    </article>
+  
+    <article class="card accent-red study">
+      <img class="icon" src="./images/icon-study.svg" alt="book icon">
+      <div class="card-base">
+        <header>
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis icon">
+          <h2>Study</h2>
+        </header>
+        <div class="card-body-txt">
+          <!-- <p>0hrs</p> daily -->
+          <!-- <p>Previous - 1hr</p> daily -->
+          <p>4hrs</p> <!-- weekly -->
+          <p>Previous - 7hrs</p> <!-- weekly -->
+          <!-- <p>13hrs</p> monthly -->
+          <!-- <p>Previous - 19hrs</p> monthly -->
+        </div>
       </div>
-    </div>
-  </article>
-
-  <article class="card accent-purple">
-    <img class="icon" src="./images/icon-social.svg" alt="text bubble icon">
-    <div class="card-base">
-      <header>    
-        <img src="./images/icon-ellipsis.svg" alt="ellipsis icon">
-        <h2>Social</h2>
-      </header>
-      <div class="card-body-txt">
-        <!-- <p>1hr</p> daily -->
-        <!-- <p>Previous - 3hrs</p> daily -->
-        <p>5hrs</p> <!-- weekly -->
-        <p>Previous - 10hrs</p> <!-- weekly -->
-        <!-- <p>21hrs</p> monthly -->
-        <!-- <p>Previous - 23hrs</p> monthly -->
+    </article>
+  
+    <article class="card accent-green exercise">
+      <img class="icon" src="./images/icon-exercise.svg" alt="person running icon">
+      <div class="card-base">
+        <header>
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis icon">
+          <h2>Exercise</h2>
+        </header>
+        <div class="card-body-txt">
+          <!-- <p>1hr</p> daily -->
+          <!-- <p>Previous - 1hr</p> daily -->
+          <p>4hrs</p> <!-- weekly -->
+          <p>Previous - 5hrs</p> <!-- weekly -->
+          <!-- <p>11hrs</p> monthly -->
+          <!-- <p>Previous - 18hrs</p> monthly -->
+        </div>
       </div>
-    </div>
-  </article>
-
-  <article class="card accent-yellow">
-    <img class="icon" src="./images/icon-self-care.svg" alt="heart icon">
-    <div class="card-base">
-      <header>
-        <img src="./images/icon-ellipsis.svg" alt="ellipsis icon">
-        <h2>Self Care</h2>
-      </header>
-      <div class="card-body-txt">
-        <!-- <p>0hrs</p> daily -->
-        <!-- <p>Previous - 1hr</p> daily -->
-        <p>2hrs</p> <!-- weekly -->
-        <p>Previous - 2hrs</p> <!-- weekly -->
-        <!-- <p>7hrs</p> monthly -->
-        <!-- <p>Previous - 11hrs</p> monthly -->
+    </article>
+  
+    <article class="card accent-purple social">
+      <img class="icon" src="./images/icon-social.svg" alt="text bubble icon">
+      <div class="card-base">
+        <header>    
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis icon">
+          <h2>Social</h2>
+        </header>
+        <div class="card-body-txt">
+          <!-- <p>1hr</p> daily -->
+          <!-- <p>Previous - 3hrs</p> daily -->
+          <p>5hrs</p> <!-- weekly -->
+          <p>Previous - 10hrs</p> <!-- weekly -->
+          <!-- <p>21hrs</p> monthly -->
+          <!-- <p>Previous - 23hrs</p> monthly -->
+        </div>
       </div>
-    </div >
-  </article>
+    </article>
+  
+    <article class="card accent-yellow selfcare">
+      <img class="icon" src="./images/icon-self-care.svg" alt="heart icon">
+      <div class="card-base">
+        <header>
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis icon">
+          <h2>Self Care</h2>
+        </header>
+        <div class="card-body-txt">
+          <!-- <p>0hrs</p> daily -->
+          <!-- <p>Previous - 1hr</p> daily -->
+          <p>2hrs</p> <!-- weekly -->
+          <p>Previous - 2hrs</p> <!-- weekly -->
+          <!-- <p>7hrs</p> monthly -->
+          <!-- <p>Previous - 11hrs</p> monthly -->
+        </div>
+      </div >
+    </article>
+  </main class="container">
 
   
 <!--   <div class="attribution">

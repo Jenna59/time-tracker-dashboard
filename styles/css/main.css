@@ -3,15 +3,6 @@ html {
   color: ghostwhite;
 }
 
-body {
-  display: grid;
-  grid-gap: 1em;
-  margin: 1em;
-}
-
-/* div {
-  outline: 3px dotted orangered;
-} */
 /* *** Variables *** */
 /* ** Colors ** */
 /* Accent */
@@ -59,13 +50,38 @@ body {
 }
 
 body {
+  margin: 1em;
+}
+@media screen and (min-width: 375px) and (max-width: 1440px) {
+  body {
+    padding: 2em;
+  }
+}
+
+.container {
   background-color: hsl(225, 41.9%, 83.1%);
+  display: grid;
+  grid-gap: 1em;
+  font-family: "Rubik", sans-serif;
+}
+@media screen and (min-width: 375px) and (max-width: 1440px) {
+  .container {
+    padding: 2em;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
 }
 
 h1,
 h2,
 p {
   margin: 0;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 /* ** Card ** */
@@ -142,6 +158,36 @@ header,
 
 .card-body-txt {
   padding: 0 1em 1em;
+}
+
+/* ** Desktop * **/
+@media screen and (min-width: 375px) {
+  .report {
+    grid-row: 2/4;
+    grid-column: 1;
+  }
+  .work,
+  .play,
+  .study {
+    grid-row: 2;
+  }
+  .exercise,
+  .social,
+  .selfcare {
+    grid-row: 3;
+  }
+  .work,
+  .exercise {
+    grid-column: 2;
+  }
+  .play,
+  .social {
+    grid-column: 3;
+  }
+  .study,
+  .selfcare {
+    grid-column: 4;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
